@@ -1,0 +1,120 @@
+/* App.jsx에서 제어 */
+* {
+  list-style-type: none;
+  margin: auto;
+}
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+/* Sidebar.jsx에서 제어 */
+
+#sidebar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  width: 10rem;
+  height: 700px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  padding: 1rem 5rem;
+}
+
+#sidebar-title {
+  margin-top: 1.2rem;
+}
+
+/* Project에서 제어 */
+
+#project-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 248, 252);
+  padding: 1rem 5rem;
+  text-align: left;
+  height: 700px;
+  width: 1200px;
+  border-radius: 1rem;
+  margin: 0;
+}
+
+#project-header {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+#project-title {
+  margin-top: 1.2rem;
+}
+
+#project-btnList {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.project-btn {
+  padding: 0 0.6rem;
+}
+
+#project-input {
+  margin: 0;
+}
+
+/* NoContent.jsx에서 제어 */
+#no-content {
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#no-content img {
+  width: 200px;
+  height: 200px;
+}
+
+#no-content button {
+  width: 120px;
+  height: 30px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+#no-content-header {
+  display: flex;
+  margin: 0;
+}
+
+/* 어디서든 사용 */
+
+.button {
+  background-color: #1c4f86;
+  color: white;
+  border: none;
+  padding: 0.8em 1.2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  margin: 1em 0.5em;
+  cursor: pointer;
+  border-radius: 0.4em;
+}
+
+.button:hover {
+  background-color: #053263;
+}
+
+.button:active {
+  background-color: #012653;
+}
+
+.h2-font {
+  font-size: 1.9rem;
+  margin: 0;
+}
