@@ -50,8 +50,17 @@ function App() {
       prevPickedPlaces.filter((place) => place.id !== selectedPlace.current.id)
     );
 
+    try {
+      await updateUserPlaces(
+        userPlaces.filter((place) => place.id !== selectedPlace.current.id)
+      )
+    } catch (error) {
+      setUserPlaces(userPlaces)
+      setErrorUpdatingPlaces({ message: error.message || "삭제 실패" })
+    }
+
     setModalIsOpen(false);
-  }, []);
+  }, [userPlaces]);
 
   function handleError() {
     setErrorUpdatingPlaces(null)
