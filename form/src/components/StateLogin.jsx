@@ -8,6 +8,8 @@ export default function Login() {
     password: ""
   })
 
+  const emailIsInvalid = enteredValues.email !== "" && !enteredValues.email.includes("@")
+
   function handleSubmit(event) {
     //HTTP 요청X
     event.preventDefault()
@@ -26,6 +28,10 @@ export default function Login() {
     }))
   }
 
+  function handleInputBlur(identifier) {
+
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <h2>Login</h2>
@@ -37,6 +43,7 @@ export default function Login() {
             onChange={(e) => handleInputChange("email", e.target.value)}
             value={enteredValues.email}
           />
+          <div className="control-error">{emailIsInvalid && <p>유효한 이메일을 입력해주세요</p>}</div>
         </div>
 
         <div className="control no-margin">
