@@ -25,7 +25,7 @@ export default function Login() {
     <form onSubmit={handleSubmit}>
       <h2>Login</h2>
 
-      <div className="control-row">
+      <div classNamnpme="control-row">
         <div className="control no-margin">
           <label htmlFor="email">Email</label>
           <input id="email" type="email" name="email"
