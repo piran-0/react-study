@@ -12,6 +12,11 @@ export default function Login() {
     //HTTP 요청X
     event.preventDefault()
     console.log("User email: " + enteredEmail + " User Password: " + enteredPassword)
+
+    setEnterValues({
+      email: "",
+      password: ""
+    })
   }
 
   function handleInputChange(identifier, value) {
